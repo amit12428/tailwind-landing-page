@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    @apply font-poppins text-gray-800;
+  }
+  /* .section-container {
+    @apply mx-auto mt-16 px-6 py-12 lg:px-8 lg:mt-32;
+  } */
+  .section-container {
+    @apply mx-auto mt-16 px-6 py-12 lg:px-8 lg:mt-10;
+  }
+  .gradient-hover-outer {
+    @apply hover:bg-linear-to-br from-red-200 via-purple-200 to-yellow-200;
+  }
+  .gradient-hover-inner {
+    @apply group-hover:bg-linear-to-br from-red-50 via-purple-50 to-yellow-50;
+  }
+}
